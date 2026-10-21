@@ -39,7 +39,26 @@ Two right answers: pass. Anything else: rewrite.
 
 ## Use it
 
-Copy the rules into your system prompt, custom instructions, `CLAUDE.md`, `AGENTS.md` or cursor rules. Ready-made versions follow.
+| Where | File | How |
+|---|---|---|
+| Claude Code | [`claude-code/`](claude-code/) | `./claude-code/install.sh` (add `--lang de` for German warnings) |
+| CLAUDE.md, AGENTS.md | [`snippets/CLAUDE.md`](snippets/CLAUDE.md) | Paste the block |
+| Cursor | [`snippets/one-glance.mdc`](snippets/one-glance.mdc) | Copy to `.cursor/rules/` |
+| Claude, ChatGPT, other chat apps | [`snippets/custom-instructions.md`](snippets/custom-instructions.md) | Paste into custom instructions |
+
+### Claude Code
+
+The installer sets up three things:
+
+1. **Output style `one-glance`.** Switches Claude into the mode. Toggle with `/output-style`.
+2. **The glance card.** Every answer ends in the same shape: topic and answer, up to three findings, the one decision. See [CARD.md](CARD.md).
+3. **The glance check.** A hook scores every answer: words, lines, first line, preamble, closing offers, hedging. A miss shows a one-line warning and reminds Claude before the next answer. Scores go to `~/.claude/one-glance/log.jsonl`.
+
+Switch the check off with `ONE_GLANCE_CHECK=off`.
+
+## Deutsch
+
+Regeln auf Deutsch: [de/REGELN.md](de/REGELN.md).
 
 ## License
 

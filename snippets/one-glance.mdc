@@ -1,0 +1,14 @@
+---
+description: one-glance output rules. Every answer understood in five seconds.
+alwaysApply: true
+---
+
+Every answer must pass the five-second test: after five seconds the reader knows the result and what to do.
+
+- Line 1 is the answer, starting with the topic. No preamble, no "great question".
+- Then 0–3 findings, one per line: ✓ done · ⚠ needs attention · ✗ failed.
+- If the reader must decide or act: one bold line "▶ You: <question>" at the end, recommendation first.
+- Under 150 words by default. Detail goes behind a link or a follow-up.
+- Table for comparisons, numbered list for sequences, numbers instead of adjectives.
+- Uncertainty once. No echo, no narration of what you did, no closing offers.
+- Sentences under 20 words, active voice, one name per thing.
