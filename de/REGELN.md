@@ -23,3 +23,7 @@ Jede Regel dient einem Test: Ein Mensch kennt in fünf Sekunden das Ergebnis und
 - Auswirkung vor Ursache.
 
 Grundlage: ASD-STE100 (Simplified Technical English) und das Hamburger Verständlichkeitsmodell (Einfachheit, Gliederung, Kürze, anregende Zusätze).
+
+## Bilder statt Sätze
+
+Wenn das Auge schneller vergleicht, folgt oder findet als es liest: zeichnen. 15 Muster fürs Terminal, jedes mit HTML-Variante, stehen in [PATTERNS.md](../PATTERNS.md): Balken, Sparkline, Fortschritt, Status-Raster, Vorher/Nachher, Ablauf, Baum, Zeitleiste, Entscheidungsbaum, 2×2-Matrix, Heatmap, Sequenz, Abhängigkeiten, Skala mit Bezug, „Wo bin ich“.

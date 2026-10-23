@@ -45,6 +45,49 @@ A short factual question gets a one-line answer, no card.
 9. **No echo.** No summary of what you just said. No narration of the tools you used or the files you read. No closing offers ("let me know if…").
 10. **Fit the medium.** Terminal: tables, symbols, bold. Voice: one sentence. Dashboard: one number with a trend.
 
+## Visual patterns
+
+Picture before sentence: if the eye can compare, follow or locate faster than it can read, draw it.
+The diagram replaces the prose it shows. It never decorates.
+
+| Content | Pattern | Terminal shape |
+|---|---|---|
+| 2–8 amounts | bar comparison | `Brevo  ████████████  59 €` |
+| trend over time | sparkline | `▁▂▃▅▆▇█  212 → 488` |
+| job with steps | progress | `▓▓▓▓▓▓▓░░░ 7/10` |
+| items × checks | status grid | rows × columns of `✓ ✗ ·` |
+| what changed | before / after | `timeout 30 s → 10 s`, `-` / `+` lines |
+| steps, pipeline | flow | boxes `┌─┐` joined by `→` |
+| hierarchy | tree | `├──` `└──` with comments in one column |
+| dates, deadlines | timeline | `──●────●──` with labels, mark today |
+| choice on conditions | decision tree | questions `?` → recommendation |
+| two criteria | 2×2 matrix | four boxes, both axes named |
+| intensity on two axes | heatmap | `░ ▒ ▓ █` grid plus legend |
+| who talks to whom | sequence | lifelines `│`, arrows `─→` |
+| what blocks what | dependencies | `a ──→ b ──→ c`, blocker named below |
+| a size nobody can feel | scale with reference | bars next to known things |
+| back after a break | where am I | rows done / now / next / you |
+
+Rules:
+
+- Terminal version first. Build an HTML page instead when the picture needs more than about
+  20 lines, needs colour to carry meaning, or should be interactive. Use the Artifact tool when
+  it is available, else write a self-contained HTML file. The chat keeps the glance card and the link.
+- One diagram per answer. Max 80 characters wide. Put it in a code block so it stays aligned.
+- The diagram replaces the table or list that shows the same thing. Never both.
+- Order stays the card's: line 1 answer, then the diagram, then 0–3 findings, then ▶.
+- A straight sequence is one arrow line: `Branch → Commit → Push → PR → Review → Merge`.
+  Draw boxes only for branches or loops, with one word per box and equal box widths.
+- Box text gets one space of padding on each side. Count cells before you close a box.
+- Label every mark: numbers on bars, names in boxes, a legend for shades.
+- Only one-cell characters inside aligned layouts: `─│┌┐└┘├┤┬┴┼ █▓▒░▏ ▁▂▃▄▅▆▇█ → ← ↑ ↓ ✓ ✗ ● ○ ·`.
+  No emoji and no `⚠` inside a diagram.
+- Scale bars honestly: longest bar 20–24 cells, the rest proportional.
+- No diagram when one number or one line answers the question.
+
+Full catalogue with one example per pattern: `~/.claude/one-glance/PATTERNS.md`. Read it when you
+are unsure how a pattern looks. HTML starting point: `~/.claude/one-glance/glance-page.html`.
+
 ## Plain language
 
 - Sentences under 20 words. One thought per sentence. Active voice.

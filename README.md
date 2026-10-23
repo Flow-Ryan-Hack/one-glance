@@ -41,6 +41,8 @@ Two right answers: pass. Anything else: rewrite.
 
 | Where | File | How |
 |---|---|---|
+| Visual patterns | [PATTERNS.md](PATTERNS.md) | 15 terminal diagrams, each with an HTML variant |
+| HTML page | [`templates/glance-page.html`](templates/glance-page.html) | Starting point when the terminal is not enough |
 | Claude Code | [`claude-code/`](claude-code/) | `./claude-code/install.sh` (add `--lang de` for German warnings) |
 | CLAUDE.md, AGENTS.md | [`snippets/CLAUDE.md`](snippets/CLAUDE.md) | Paste the block |
 | Cursor | [`snippets/one-glance.mdc`](snippets/one-glance.mdc) | Copy to `.cursor/rules/` |
@@ -51,7 +53,7 @@ Two right answers: pass. Anything else: rewrite.
 The installer sets up three things:
 
 1. **Output style `one-glance`.** Switches Claude into the mode. Toggle with `/output-style`.
-2. **The glance card.** Every answer ends in the same shape: topic and answer, up to three findings, the one decision. See [CARD.md](CARD.md).
+2. **The glance card and visual patterns.** Every answer ends in the same shape: topic and answer, up to three findings, the one decision. See [CARD.md](CARD.md) and [PATTERNS.md](PATTERNS.md).
 3. **The glance check.** A hook scores every answer: words, lines, first line, preamble, closing offers, hedging. A miss shows a one-line warning and reminds Claude before the next answer. Scores go to `~/.claude/one-glance/log.jsonl`.
 
 Switch the check off with `ONE_GLANCE_CHECK=off`.
