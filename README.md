@@ -37,6 +37,19 @@ Show the output to someone for five seconds. Ask two things:
 
 Two right answers: pass. Anything else: rewrite.
 
+## Install
+
+Claude Code, macOS or Linux, needs `git` and `python3`:
+
+```sh
+git clone https://github.com/Flow-Ryan-Hack/one-glance.git
+./one-glance/claude-code/install.sh            # add --lang de for German warnings
+```
+
+Start a new session. The mode is on. Switch it off with `/output-style default`.
+
+No git? Download the [latest release](https://github.com/Flow-Ryan-Hack/one-glance/releases/latest) as a zip, unpack it and run `claude-code/install.sh`.
+
 ## Use it
 
 | Where | File | How |
